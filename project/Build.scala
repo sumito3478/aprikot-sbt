@@ -9,7 +9,7 @@ object AprikotSbtBuild extends Build {
   ).settings(
     Seq(
       sbtPlugin := true,
-      version := "0.0.1",
+      version := "0.0.2-SNAPSHOT",
       scalacOptions ++= Seq(
         "-deprecation",
         "-explaintypes",
