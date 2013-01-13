@@ -19,7 +19,7 @@ package info.sumito3478.aprikot.sbt
 import sbt._
 import Keys._
 
-object StandardProject {
+object StandardProject extends Plugin{
   val newSettings = Seq(
     scalaVersion := "2.10.0",
     autoCompilerPlugins := true,
