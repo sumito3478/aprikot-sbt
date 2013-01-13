@@ -21,6 +21,7 @@ import Keys._
 
 object StandardProject extends Plugin{
   val newSettings = Seq(
+    organization := "info.sumito3478",
     scalaVersion := "2.10.0",
     autoCompilerPlugins := true,
     addCompilerPlugin("org.scala-lang.plugins" % "continuations" % "2.10.0"),
