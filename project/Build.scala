@@ -9,6 +9,8 @@ object AprikotSbtBuild extends Build {
   ).settings(
     Seq(
       sbtPlugin := true,
+      organization := "info.sumito3478",
+      name := "aprikot-sbt",
       version := "0.0.2-SNAPSHOT",
       scalacOptions ++= Seq(
         "-deprecation",
