@@ -1,6 +1,6 @@
-# aprikot-combinator
+# aprikot-boilerplate
 
-This software is a combinator library for Scala.
+This software is a boilerplate project for sbt.
 
 This software is in early development and not well documented, but has some
 documentation comments in the source and with sbt doc, you can generate
