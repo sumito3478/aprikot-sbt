@@ -1,0 +1,3 @@
+[submodule "tool/sbt-extras"]
+	path = tool/sbt-extras
+	url = http://github.com/paulp/sbt-extras.git
