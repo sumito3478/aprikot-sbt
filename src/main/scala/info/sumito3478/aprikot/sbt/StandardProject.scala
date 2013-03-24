@@ -22,6 +22,7 @@ import Keys._
 object StandardProject extends Plugin{
   val newSettings = Seq(
     fork := true,
+    javaOptions := Seq("-Xmx1024m"),
     organization := "info.sumito3478",
     scalaVersion := "2.10.1",
     crossScalaVersions := Seq("2.10.1", "2.10.0"),
