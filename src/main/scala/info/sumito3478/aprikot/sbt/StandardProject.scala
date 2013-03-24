@@ -23,9 +23,9 @@ object StandardProject extends Plugin{
   val newSettings = Seq(
     fork := true,
     organization := "info.sumito3478",
-    scalaVersion := "2.10.0",
+    scalaVersion := "2.10.1",
+    crossScalaVersions := Seq("2.10.1", "2.10.0"),
     autoCompilerPlugins := true,
-    addCompilerPlugin("org.scala-lang.plugins" % "continuations" % "2.10.0"),
     scalacOptions ++= Seq(
       "-P:continuations:enable",
       "-target:jvm-1.6",
@@ -51,6 +51,8 @@ object StandardProject extends Plugin{
       rs =>
         Resolver.withDefaultResolvers(rs, mavenCentral = false)
     },
+    libraryDependencies <++= scalaVersion(v => Seq(
+        compilerPlugin("org.scala-lang.plugins" % "continuations" % v))),
     libraryDependencies ++= Seq(
       "org.scalatest" %% "scalatest" % "2.0.+" % "test"))
 }
