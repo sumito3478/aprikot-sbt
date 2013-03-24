@@ -11,7 +11,7 @@ object AprikotSbtBuild extends Build {
       sbtPlugin := true,
       organization := "info.sumito3478",
       name := "aprikot-sbt",
-      version := "0.0.10",
+      version := "0.0.11",
       scalacOptions ++= Seq(
         "-deprecation",
         "-explaintypes",
