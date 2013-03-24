@@ -23,7 +23,7 @@ object JavaProject extends Plugin {
   val newSettings = Seq(
     autoScalaLibrary := false,
     crossPaths := false,
-    fork := true,
+    fork := false,
     organization := "info.sumito3478",
     publishMavenStyle := true,
     publishTo := Some(Resolver.sftp(
